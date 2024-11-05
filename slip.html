@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Product - Elite Chemist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #343a40;
+        }
+        .product-details, .payment-options {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .payment-options ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .payment-options ul li {
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        .payment-options label {
+            margin-left: 10px;
+            font-weight: bold;
+        }
+        .btn-submit {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #28a745;
+            color: #fff;
+            font-size: 16px;
+            text-align: center;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn-submit:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Elite Chemist - Purchase Product</h1>
+
+    <div class="product-details">
+        <h2>Product Details</h2>
+        <p><strong>Product Name:</strong> [Product Name]</p>
+        <p><strong>Description:</strong> [Product Description]</p>
+        <p><strong>Price:</strong> $[Price]</p>
+    </div>
+
+    <div class="payment-options">
+        <h2>Select Payment Option</h2>
+        <form action="[Payment_Processing_URL]" method="POST">
+            <ul>
+                <li>
+                    <input type="radio" id="mpesa" name="payment_method" value="mpesa" required>
+                    <label for="mpesa">Mpesa</label>
+                </li>
+                <li>
+                    <input type="radio" id="ecocash" name="payment_method" value="ecocash">
+                    <label for="ecocash">Ecocash</label>
+                </li>
+                <li>
+                    <input type="radio" id="mywallet" name="payment_method" value="mywallet">
+                    <label for="mywallet">MyWallet</label>
+                </li>
+                <li>
+                    <input type="radio" id="ewallet" name="payment_method" value="ewallet">
+                    <label for="ewallet">E-Wallet</label>
+                </li>
+                <li>
+                    <input type="radio" id="mukuru" name="payment_method" value="mukuru">
+                    <label for="mukuru">Mukuru</label>
+                </li>
+                <li>
+                    <input type="radio" id="mobile_banking" name="payment_method" value="mobile_banking">
+                    <label for="mobile_banking">Mobile Banking</label>
+                </li>
+            </ul>
+            <a href="payment.html" class="btn-submit">Proceed to Payment</a>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
+
+

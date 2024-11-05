@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>index</title>
+</head>
+<body>
+		<style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            border-radius: 50px;
+            height: 50vh;
+            width: 50vh;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: #333;
+            padding: 0px;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+        }
+
+        /* Dropdown container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown content */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #4CAF50; /* Green background */
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 4px;
+        }
+
+        /* Dropdown link styling */
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Show the dropdown content on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Sub-items styling */
+        .dropdown-content a:hover {
+            background-color: #3e8e41; /* Darker green for hover */
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #555;
+            color: white;
+        }
+        /* Carousel Styling */
+        .carousel-container {
+            position: relative;
+            max-width: 100%;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .carousel-slide {
+            display: flex;
+            width: 300%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        /* Navigation Buttons */
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 20px;
+           
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo(1)(1).png" alt="logo" class="logo">
+        </div>
+        <h2>Welcome to Growth Summit Chemist</h2>
+    </header>
+     <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+
+        <!-- Products Dropdown -->
+        <div class="dropdown">
+            <a href="products.html" class="dropbtn">Products</a>
+            <div class="dropdown-content">
+                <a href="single-product.html">Single Product</a>
+            </div>
+        </div>
+
+        <!-- Services Dropdown -->
+        <div class="dropdown">
+            <a href="services.html" class="dropbtn">Services</a>
+            <div class="dropdown-content">
+                <a href="consultation.html">Consultation</a>
+                <a href="immunization.html">Immunization</a>
+                <a href="screening.html">Screening</a>
+            </div>
+        </div>
+
+        <a href="contact.html">Contact</a>
+    </div>
+
+		</header>
+		<main>
+		<section class="about-section">
+			<h2>Who we are</h2>
+			<p>At Growth Summit Chemist, we are more than just a pharmacy; we are a dedicated healthcare partner commited to enhacing the well-being of our community. Our mission is to provide high quality pharmaceutical care and personalized service, ensuring every patient receives the attention they deserve.
+			Our core values of intergrity, compassion, and excellence drive us in all that we do. Each member of our team brings unique expertise and a shared commitment to improving the health of our patients.
+		    We believe in building a strong relationships within our community, offering educational programs and health initiatives to promote wellness and health living. Our team is here to support you, answer your questions, and provide guidance on your health journey.</p>
+		    <P>TOGETHER, WE STRIVE TO MAKE A POSITIVE IMPACT, ONE PRESCRIPTION AT A TIME!</p>
+		</section>
+
+		<section class="mission section">
+			<h2>Our Mission</h2>
+			<p>At Growth Summit Chemist, we are dedicated to providing quality healthcare and personalized service to our community.</p>
+			<P>PATIENT-CENTRIC CARE: Prioritizing individual patient needs and medication management.</P>
+		    <P>EDUCATION: Informing patients about medications, health conditions, and preventive care.</P>
+		   <P> ACCESS TO MEDICATION: Ensuring availability of essential medications and health products.</P>
+		   <P> COMMUNITY ENGAGEMENT: Participating in public health initiatives and improving community health outcomes.</p>
+		   <p>COLLABORATION: Working alongside healthcare providers to optimize treatment plans.</p>
+		</section>
+
+		<section class="team section">
+			<h2>**Our Team**</h2>
+<p><h4>Our team of certified pharmacists is dedicated to providing expert advice and compassionate care. With years of experience and specialized training, they are ready to assist you with personalized consultations and solutions that suit your health journey.
+</h4></p>
+			<div class="team member">
+                <img src="Pharmacist.jpg" alt="Pharmacist">
+				<h4>Ms Mohapi</h4>
+			<p>Pharmacist</p>
+			<p>The primary healthcare professional responsible for dispensing medication and providing patient care. She's responsible for reviewing and interpreting prescriptions, counselling patients on medication usage, side effects, and interactions. All she ensures that patients medication therapies for effectiveness and safety are monitored.</p>
+			</div>
+			<div class="team member">
+                <img src="Technician.jpg" alt="Technician">
+				<h4>Ms Mokone</h4>
+			<p>Pharmacy Technician</p>
+			<p>Assist pharmacist in dispensing medication and managing daily operations. Moreover, she prepares and label presriptions under the pharmacist's supervision and also maintain patients records and ensure compliance with regulations.</p>
+			</div>
+			<div class="team member">
+                <img src="Manager.jpg" alt="Manager">
+				<h4>Mr Letsoela</h4>
+			<p>Pharmacy Manager</p>
+			<p>Oversees the pharmacy's operations, ensuring compliance and efficiency. He implement marketing strategies to grow the pharmacy's market and also ensure adherence to health regulations and pharmacy policies. Suffice to say, he manage budgets and financial performance.</p>
+			</div>
+			<div class="team member">
+                <img src="clinic pharmacist.jpg" alt="clinic pharmacist">
+				<h4>Ms Moalosi</h4>
+			<p>Clinical Pharmacist</p>
+			<p>Focus on optimizing medication therapy and improving patient health outcomes; ensures conduct medication therapy management and patient assessment and also educate patients and healthcare providers about medications. She also do researches and stay updated on the new drug therapies.</p>
+			</div>
+			<div class="team member">
+                <img src="Compounder.jpg" alt="Compounder">
+				<h4>Ms Nqosa</h4>
+			<p>Compounding Pharmacist</p>
+			<p>Prepare personalized medications tailored to individual patient needs. Responsible for providing consultations on compound medications, ensuring compliance with compounding standards and regulations and lastly, assess and select appropriate ingredients and processes.</p>
+			</div>
+			<div class="team member">
+                <img src="Assistant.jpg" alt="Assistant">
+				<h4>Mr Nkatane</h4>
+				<p>Pharmacy Assistant</p>
+				<p>Provide administrative support and help with the pharmacy's day to day functions. He also manage customer service inquiries and transactions, assist in inventory management and organization. Mr Nkatane support the pharmacy staff with clerical tasks.</p>
+			</div>
+			
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2024 Growth Summit Chemist. All rights reserved</p>
+	</footer>
+</body>
+</html>
+

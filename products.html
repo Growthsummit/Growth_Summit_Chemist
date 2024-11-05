@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>index</title>
+</head>
+<body>
+	<style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+         header {
+            padding: 0px;
+            margin: 0px;
+            height: 145px;
+        
+        }
+
+        .navbar {
+            display: flex;
+            background-color: #333;
+            padding: 0px;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+        }
+
+        /* Dropdown container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown content */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #4CAF50; /* Green background */
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+       
+        }
+
+        /* Dropdown link styling */
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Show the dropdown content on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Sub-items styling */
+        .dropdown-content a:hover {
+            background-color: #3e8e41; /* Darker green for hover */
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #555;
+            color: white;
+        }
+        /* Carousel Styling */
+        .carousel-container {
+            position: relative;
+            max-width: 100%;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .carousel-slide {
+            display: flex;
+            width: 300%;
+            transition: transform 0.5s ease-in-out;
+        }
+        .logo {
+            border-radius: 50px;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        /* Navigation Buttons */
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 20px;
+           
+        }
+        img{
+            border-radius: 20px;
+            width: 80vh;
+            height: 80vh;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo(1)(1).png" alt="logo" class="logo">
+        </div>
+        <h2>Welcome to Growth Summit Chemist</h2>
+    </header>
+     <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+
+        <!-- Products Dropdown -->
+        <div class="dropdown">
+            <a href="products.html" class="dropbtn">Products</a>
+            <div class="dropdown-content">
+                <a href="single-product.html">Single Product</a>
+            </div>
+        </div>
+
+        <!-- Services Dropdown -->
+        <div class="dropdown">
+            <a href="services.html" class="dropbtn">Services</a>
+            <div class="dropdown-content">
+                <a href="consultation.html">Consultation</a>
+                <a href="immunization.html">Immunization</a>
+                <a href="screening.html">Screening</a>
+            </div>
+        </div>
+
+        <a href="contact.html">Contact</a>
+    </div>
+
+		</header>
+
+<p>Welcome to our collection of premium health and wellness products! At our pharmacy, we are committed to offering a wide range of high-quality pharmaceuticals, supplements, and personal care items to meet your everyday needs. Whether you’re looking for trusted prescription medications, essential vitamins, each product is carefully selected to ensure the best for you and your family. With a focus on safety, reliability, and affordability, we aim to support your health journey with products you can trust. Explore our selection today and discover the perfect solutions for your well-being</p>
+<h2>Analgesics</h2>
+<img src="pro1.jpg" alt="pro1">
+<img src="pro.jpg" alt="pro">
+<p>Role: Analgesics, commonly known as painkillers, play a crucial role in managing and relieving pain in the body without causing a loss of consciousness. They work by blocking pain signals sent to the brain or by interfering with the brain's interpretation of these signals, making them essential for treating both acute and chronic pain.</p>
+<h2> Antibiotics</h2>
+<img src="pro2.jpg" alt="pro2">
+<img src="pro(2).jpg" alt="pro(2)">
+<p>Role: Antibiotics are used to treat bacterial infections by killing or inhibiting the growth of bacteria.  Antibiotics are effective against bacterial infections like strep throat, urinary tract infections, and certain respiratory infections. They don’t work against viruses, so they’re ineffective for illnesses like the common cold or flu.Antibiotics are powerful medications used to treat bacterial infections by killing or inhibiting the growth of bacteria. Discovered in the early 20th century, they have revolutionalised medicine, saving countless lives from infections that were once fatal. Antibiotics work by targeting specific bacterial functions, such as cell wall synthesis or protein production, without harming human cells. </p>
+<h2>Antihypertensives</h2>
+<img src="pro3.jpg" alt="pro3">
+<img src="pro(3).jpg" alt="pro(3)">
+<p>Role: These medications are used to manage high blood pressure (hypertension). Hypertension is a significant risk factor for serious health complications, including heart disease, stroke, and kidney damage. These medications to lower blood pressure, improve cardivascular health, and prevent complications. The choice of antihypertensives depends on factors like the patients overall health, the severity of hypertension, and any existing medical conditions </p>
+<h2> Antihistamines</h2>
+<img src="pro4.jpg" alt="pro4">
+<img src="pro(4).jpg" alt="pro(4)">
+<p>Role: Antihistamines are used to treat allergic reactions by blocking histamine, a substance produced by the body during an allergic reaction. By inhibiting histamines action, these drugs help relieve symptoms such as itching, sneezing, runny nose, and hives. There are two main types: first-generation antihastimines, which are less sedating and often preferred for long-term use. Antihistamines are commonly used to treat allergies, hay fever, and certain cold symptom </p>
+<h2>Antidepressants</h2>
+<img src="pro5.jpg" alt="pro5">
+<img src="pro(5).jpg" alt="pro(5)">
+<p>Role: Antidepressants are used to treat depression, anxiety, and some other mood disorders. Antidrepressants are medications designed to alleviate symptoms of depression by adjusting the balance of chemicals in the brain called neurotransmitters. There are several types, including SSRIs(selective serotonin-norepinephrine reuptake inhibitors), and tricylic antidepressants. These medications not only help improve mood but also can aid in alleviating anxiety and other related conditions. Its important to note that antidepressants usually take several weeks to start working and may come with side effects. Always consult with a healthcare provider before starting or stopping any medication. </p>
+<h2> Antidiabetics</h2>
+<img src="pro6.jpg" alt="pro6">
+<img src="pro(6).jpg" alt="pro(6)">
+<p>Role: These medications are used to manage diabetes by controlling blood sugar levels. They can be categorized into several classes, including insulin, which helps cells absorb glucose, and oral agents like metformin, sulfonylureas, and DPP-4 inhibitors, which improve insulin production. The choice of antidiabetic therapy depends on the type of diabetes, the patients health status, and individual response to treatment. Proper management with these medications is crucial to prevent complications associated with diabetes.</p>
+<footer>
+			<p>&copy;2024 Growth Summit Chemist.All rights reserved.</p>
+		</footer>
+	</body>
+	</html>
